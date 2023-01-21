@@ -1,0 +1,18 @@
+
+#include <iostream>
+#include<queue>   // queue ka mtlb hota h line line mein jo pahale lagta h uski pahle baari aati h
+using namespace std;
+
+int main()
+{
+       queue<string> q;
+       q.push(" love");
+       q.push("babbar");
+       q.push("kumar");
+       cout<< " before pop size "<<q.size()<<endl;
+       cout<<" First element"<<q.front()<<endl;
+       q.pop();
+       cout<<" First element "<<q.front()<<endl;  // yahan first ab babbar ho jayega kiyoki love pop kia h
+       
+       cout<<" after pop size "<< q.size();
+}
